@@ -5,7 +5,7 @@
     <title>Каталог</title>
   </head>
   <body>
-    <header class="page-header">
+    <header data-test="header" class="page-header">
       <nav class="navigation">
     <ul class="navigation-list">
      <li class="navigation-item">
@@ -34,7 +34,7 @@
     </ul>
      </nav>
     </header>
-    <main class="main-inner">
+    <main data-test="main" class="main-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -47,7 +47,7 @@
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
-      <section class="filter-content">
+      <section data-test="filter" class="filter-content">
         <h2 class="visually-hidden">Фильтры для подбора гостиниц</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
@@ -101,7 +101,7 @@
         </form>
       </section>
       </header>
-      <section class="catalog-products">
+      <section data-test="catalog" class="catalog-services">
         <p>Найдено гостиниц: <span>38</span></p>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
@@ -190,8 +190,17 @@
           </li>
         </ul>
       </section>
+      <section data-test="subscribe" class="subscription">
+        <h2 class="title-2 subscription-offer">Подпишитесь на рассылку</h2>
+        <p class="about-subscription">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p><label for="your-e-mail">Ваш e-mail</label>
+          <input type="email" id="your-e-mail" name="your-e-mail"></p>
+          <button class="button" type="submit">Подписаться</button>
+        </form>
+      </section>
     </main>
-    <footer class="page-footer">
+    <footer data-test="footer" class="page-footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Давайте дружить</h2>
         <ul class="footer-social-list">
